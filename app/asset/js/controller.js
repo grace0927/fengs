@@ -1,6 +1,6 @@
 'use strict';
 
-var fengs = angular.module('fengs', [
+angular.module('fengs', [
     'ngRoute',
     'fengs.home',
     'fengs.faith',
@@ -8,8 +8,7 @@ var fengs = angular.module('fengs', [
     'fengs.knowledge',
     'fengs.life',
     'fengs.about'
-]);
-
-fengs.config(['$routeProvider', function($routeProvider) {
+])
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
