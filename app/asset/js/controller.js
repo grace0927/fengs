@@ -1,3 +1,5 @@
+'use strict';
+
 var fengs = angular.module('fengs', [
     'ngRoute',
     'fengs.home',
@@ -11,7 +13,3 @@ var fengs = angular.module('fengs', [
 fengs.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
-
-fengs.controller('FengsCtrl', function ($scope) {
-
-});
