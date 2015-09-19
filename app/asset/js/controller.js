@@ -1,5 +1,6 @@
 var fengs = angular.module('fengs', [
     'ngRoute',
+    'fengs.home',
     'fengs.faith',
     'fengs.family',
     'fengs.knowledge',
