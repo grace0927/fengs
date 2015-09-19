@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="bower_components/bootstrap/favicon.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>Fengs</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +28,12 @@
     <![endif]-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="asset/js/controller.js"></script>
+    <script src="asset/js/home.js"></script>
+    <script src="asset/js/faith.js"></script>
+    <script src="asset/js/family.js"></script>
+    <script src="asset/js/knowledge.js"></script>
+    <script src="asset/js/life.js"></script>
+    <script src="asset/js/about.js"></script>
   </head>
 
   <body ng-controller="BlogCtrl">
@@ -35,21 +41,21 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a>
-          <a class="blog-nav-item" href="#">Faith</a>
-          <a class="blog-nav-item" href="#">Family</a>
-          <a class="blog-nav-item" href="#">Knowledge</a>
-          <a class="blog-nav-item" href="#">Life</a>
-          <a class="blog-nav-item" href="#">About</a>
+          <a class="blog-nav-item active" href="#/home">Home</a>
+          <a class="blog-nav-item" href="#/faith">Faith</a>
+          <a class="blog-nav-item" href="#/family">Family</a>
+          <a class="blog-nav-item" href="#/knowledge">Knowledge</a>
+          <a class="blog-nav-item" href="#/life">Life</a>
+          <a class="blog-nav-item" href="#/about">About Me</a>
         </nav>
       </div>
     </div>
 
     <div class="container">
+    <div ng-view></div>
     </div><!-- /.container -->
 
     <footer class="blog-footer">
-      
     </footer>
 
 
