@@ -11,6 +11,9 @@ fengs.config(['$routeProvider', function($routeProvider) {
   	$routeProvider.when('home', {
 		redirectTo: '/home'
 	})
+	.when('/family', {
+		redirectTo: '/family'
+	})
 	.when('about', {
 		redirectTo: '/about'
 	});
