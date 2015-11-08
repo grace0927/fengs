@@ -3,6 +3,7 @@
 var fengs = angular.module('fengs', [
     'ngRoute',
     'fengs.home',
+    'fengs.family',
     'fengs.about'
 ]);
 
