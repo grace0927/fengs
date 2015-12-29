@@ -4,16 +4,16 @@ h1, h3 {
 }
 </style>
 <br><br>
-<div class="row" ng-controller="AboutCtrl">
-	<div class="col-md-12 name text-center">
-		<h1>{{ name }}</h1>
+<div  ng-controller="AboutCtrl">
+	<div class="row">
+		<div class="col-md-12 name text-center">
+			<h1>{{ name }}</h1>
+		</div>
+		<div class="col-md-12 email text-right">
+			<span>C<small>ELLPHONE2008</small> <small>AT</small> G<small>MAILDOTCOM</small></span>
+		</div>
 	</div>
-	<div class="col-md-12 email text-right">
-		<span>C<small>ELLPHONE2008</small> <small>AT</small> G<small>MAILDOTCOM</small></span>
-	</div>
-</div>
-<hr>
-<div ng-controller="ContentCtrl">
+	<hr>
 	<div class="row" ng-repeat="block in blocks">
 		<div class="col-md-12">
 			<div class="text-center title">
@@ -32,6 +32,5 @@ h1, h3 {
 				</ul>
 			</div>
 		</div>
-		<br><br>
 	</div>
 </div>

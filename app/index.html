@@ -28,13 +28,11 @@
     <![endif]-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize.js"></script>
+    <script src="asset/js/app.js"></script>
     <script src="asset/js/controller.js"></script>
-    <script src="asset/js/home.js"></script>
-    <script src="asset/js/faith.js"></script>
-    <script src="asset/js/family.js"></script>
-    <script src="asset/js/knowledge.js"></script>
-    <script src="asset/js/life.js"></script>
-    <script src="asset/js/about.js"></script>
+    <script src="asset/js/services.js"></script>
     <style type="text/css">
     .icon-bar {
       background-color: black;
@@ -42,11 +40,13 @@
     .navbar-brand {
       color: black;
     }
+    .content {
+      margin-top: 30px;
+    }
     </style>
   </head>
 
   <body>
-
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
@@ -62,10 +62,10 @@
           <div class="collapse navbar-collapse" id="menu-links">
             <ul class="nav navbar-nav">
               <li class="active"><a class="blog-nav-item" href="#home">Home</a></li>
-              <li><a class="blog-nav-item" href="#faith">Faith</a></li>
+              <!--<li><a class="blog-nav-item" href="#faith">Faith</a></li>
               <li><a class="blog-nav-item" href="#family">Family</a></li>
               <li><a class="blog-nav-item" href="#knowledge">Knowledge</a></li>
-              <li><a class="blog-nav-item" href="#life">Life</a></li>
+              <li><a class="blog-nav-item" href="#life">Life</a></li>-->
               <li><a class="blog-nav-item" href="#about">About Me</a></li>
             </ul>
           </div>
@@ -73,8 +73,8 @@
       </div>
     </div>
     
-    <div class="container">
-    <div ng-view></div>
+    <div class="container content">
+      <div ng-view></div>
     </div><!-- /.container -->
 
     <footer class="blog-footer">
@@ -86,7 +86,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bower_components/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!--<script src="bower_components/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>-->
     <script>
     	$(function() {
     		$("li a").on('click', function(e) {
@@ -94,6 +94,6 @@
     			$(this).parent().addClass('active');
     		});
     	})
-	</script>
+    </script>
   </body>
 </html>
