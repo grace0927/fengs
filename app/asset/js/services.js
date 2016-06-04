@@ -16,7 +16,7 @@ services.factory('Post', ['$resource',
 
 services.factory('About', ['$resource', 
 	function($resource) {
-		return $resource('api/web/', {}, {
+		return $resource('/api/web/', {}, {
 			query: {
 				method: 'GET',
 				isArray: true
